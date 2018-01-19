@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.check{
+  background: orange;
+}
+.checkbr{
+  border: 1px solid black;
+}
+a{
+  color: #383D45;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+
+
+*{
+
+}
+body{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #383D45;
+}
+
+/*---  boostrap change   ---*/
+.container-fluid{
+    padding: 0px;
+}
+
+
+
+/*---   menu_banner   ---*/
+
+header{
+  height: 800px;
+}
+nav{
+  height: 80px;
+  position: fixed;
+  overflow: hidden;
+}
+nav ul{
+  text-decoration: none;
+  height: 60px;
+  text-align: center;
+}
+nav ul li{
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding-top: 3px;
+  margin-right: 10px;
+}
+nav ul li:hover{
+  padding-top: 0px;
+  border-top: 3px solid #00ABBC;
+}
+nav ul li a{
+  display: block;
+  padding-top: 14px;
+  height: 60px;
+}
+nav ul li a:hover{
+  background-color: rgba(100, 100, 100, 0.05);
+  transition: ease 1s;
+}
+.menu_banner{
+  background: url(img/photo/banner.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+
+}
+
+/*---   menu_banner    logo   ---*/
+.logo img{
+  width:100px;
+  height: auto;
+  display: block;
+}
+
+/*---   navbar   ---*/
+/*---   navbar   ---*/
+/*---   navbar   ---*/
