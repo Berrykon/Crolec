@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
 .check{
   background: orange;
+}
+.check2{
+  background: red;
 }
 .checkbr{
   border: 1px solid black;
@@ -12,6 +15,18 @@ a{
 }
 a:hover{
   text-decoration: none;
+  color: #00ABBC;
+}
+.russo{
+  font-family: 'Russo One', sans-serif;
+}
+.clearfix:after{
+   content: "";
+   display: table;
+   clear: both;
+}
+.d_left{
+  float: left;
 }
 
 
@@ -33,6 +48,10 @@ body{
 
 /*---   menu_banner   ---*/
 
+        /*.main_container{
+          max-width: 1440px
+        }*/
+
 header{
   height: 800px;
 }
@@ -40,6 +59,8 @@ nav{
   height: 80px;
   position: fixed;
   overflow: hidden;
+  font-weight: 900;
+  font-size: 16px;
 }
 nav ul{
   text-decoration: none;
@@ -50,12 +71,12 @@ nav ul li{
   display: inline-block;
   width: 100px;
   text-align: center;
-  padding-top: 3px;
+  padding-top: 5px;
   margin-right: 10px;
 }
 nav ul li:hover{
   padding-top: 0px;
-  border-top: 3px solid #00ABBC;
+  border-top: 5px solid #00ABBC;
 }
 nav ul li a{
   display: block;
@@ -74,10 +95,19 @@ nav ul li a:hover{
 }
 
 /*---   menu_banner    logo   ---*/
-.logo img{
+.logo .a_center{
+  margin: 0 auto;
+  width: 250px;
+  height: 100px;
+}
+.logo img{``
   width:100px;
   height: auto;
   display: block;
+}
+.logo h2{
+margin-top: 30px;
+margin-left: 15PX;
 }
 
 /*---   navbar   ---*/
