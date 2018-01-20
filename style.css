@@ -17,9 +17,7 @@ a:hover{
   text-decoration: none;
   color: #00ABBC;
 }
-.russo{
-  font-family: 'Russo One', sans-serif;
-}
+
 .clearfix:after{
    content: "";
    display: table;
@@ -28,13 +26,25 @@ a:hover{
 .d_left{
   float: left;
 }
+/*---  text   ---*/
+.russo{
+  font-family: 'Russo One', sans-serif;
+}
+.t_light{
+  font-size: 5vw;
+  font-weight: 100;
+}
+.t_massive{
+  font-size: 8vw;
+  font-weight: 900;
+}
 
 
 *{
 
 }
 body{
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Roboto', sans-serif;
   color: #383D45;
 }
@@ -55,8 +65,11 @@ body{
 header{
   height: 800px;
 }
+.navbar{
+  padding: 0;
+}
 nav{
-  height: 80px;
+  min-height: 80px;
   position: fixed;
   overflow: hidden;
   font-weight: 900;
@@ -64,8 +77,8 @@ nav{
 }
 nav ul{
   text-decoration: none;
-  height: 60px;
   text-align: center;
+  margin: 0 auto;
 }
 nav ul li{
   display: inline-block;
@@ -94,7 +107,12 @@ nav ul li a:hover{
 
 }
 
+
+
 /*---   menu_banner    logo   ---*/
+.logo_container{
+  margin-top: 60px;
+}
 .logo .a_center{
   margin: 0 auto;
   width: 250px;
@@ -110,6 +128,35 @@ margin-top: 30px;
 margin-left: 15PX;
 }
 
+
+
+/*---   menu_banner    welcome   ---*/
+.welcome{
+  margin-top: 50px;
+}
+.element{
+  width:45px;
+  height: 5px;
+  background: red;
+  margin: 0 auto;
+}
+
+
+/*---   little_about_me   ---*/
+.little_about_me_container{
+  height: 800px;
+}
+.little_about_me{
+  background: linear-gradient(#00ABBC, #39AAAD);
+  clip-path: polygon(
+    0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw)
+  );
+  z-index: 10;
+}
+
+
 /*---   navbar   ---*/
 /*---   navbar   ---*/
-/*---   navbar   ---*/
+
+
+/*---   media   ---*/
