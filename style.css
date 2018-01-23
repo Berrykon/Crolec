@@ -26,7 +26,43 @@ a:hover{
 .d_left{
   float: left;
 }
+
+
+.inner_center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---  background   ---*/
+
+.bg_silver{
+  background: #F2F2F2;
+}
+.bg_turkus{
+  background: #00ABBC;
+}
+.bg_grey{
+  background: #383D45;
+}
+.bg_green{
+  background: #39B54A;
+}
 /*---  text   ---*/
+.t_white{
+  color:#fff;
+}
+.t_turkus{
+  color: #00ABBC;
+  text-shadow: 2px 2px 3px silver;
+}
+.t_green{
+  color: #39B54A;
+}
+.t_grey{
+  color: #383D45;
+}
 .russo{
   font-family: 'Russo One', sans-serif;
 }
@@ -34,14 +70,11 @@ a:hover{
     font-size: 5vw;
 }
 .t_light{
-  font-weight: 100;
+  font-weight: 300;
 }
 .t_massive{
   font-size: 8vw;
   font-weight: 900;
-}
-.t_white{
-  color:#fff;
 }
 .t_bold{
   font-weight: 900;
@@ -52,7 +85,38 @@ a:hover{
 .t_big{
   font-size: 2rem
 }
+.t_1_5{
+  font-size: 1.5rem;
+}
+.t_2{
+  font-size: 2rem;
+}
+.t_2_5{
+  font-size: 2.5rem;
+}
 
+/*---  margin   ---*/
+
+.margin_l_5{
+  margin-left: 5px;
+}
+.margin_l_10{
+  margin-left: 10px;
+}
+.margin_l_15{
+  margin-left: 15px;
+}
+.margin_l_20{
+  margin-left: 20px;
+}
+.margin_t_20{
+  margin-top: 20px;
+}
+
+/*---  display   ---*/
+.d_block{
+  display: block;
+}
 
 
 *{
@@ -73,9 +137,10 @@ body{
 
 /*---   menu_banner   ---*/
 
-        /*.main_container{
-          max-width: 1440px
-        }*/
+.inside_main_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 header{
 
@@ -98,10 +163,12 @@ nav ul{
 nav ul li{
   display: inline-block;
   width: 100px;
-  text-align: center;
   padding-top: 5px;
   margin-right: 10px;
+
 }
+
+
 nav ul li:hover{
   padding-top: 0px;
   border-top: 5px solid #00ABBC;
@@ -116,14 +183,16 @@ nav ul li a:hover{
   transition: ease 1s;
 }
 .menu_banner{
-  background: url(img/photo/banner.jpg) no-repeat center center;
-  background-size: cover;
+  background: url(img/photo/banner.jpg) no-repeat top center;
+  background-size: contain;
   width: 100%;
-  height: 900px;
+
 
 }
 
-
+nav .toggle_menu{
+  margin: 10px auto;
+}
 
 /*---   menu_banner    logo   ---*/
 .logo_container{
@@ -176,8 +245,11 @@ margin-left: 15PX;
 .layout_design img{
   position: relative;
   width: 100%;
+  max-width:600px;
   height: auto;
   z-index: 10;
+  -moz-z-index: 10;
+
 }
 .about_me_text{
   position: absolute;
@@ -188,7 +260,60 @@ margin-left: 15PX;
 
 
 
+/*---  contact_container   ---*/
+.contact_container{
+  margin-top: 30px;
+  min-height: 150px;
+}
+.contact_container div{
+  margin-left: 1px;
+  margin-bottom: 1px;
+  text-align: center;
 
+}
+.contact_container h5{
+  margin-top: 10px;
+}
+
+
+/*---  skills   ---*/
+
+.graphic_container{
+  min-height: 400px;
+}
+
+.skills{
+  padding: 60px 150px 80px;
+}
+
+.skills p{
+  margin: 0;
+}
+
+.icon_text{
+position: absolute;
+z-index: 9;
+left:45px;
+top: 30px;
+}
+.img_icon{
+  text-shadow: 2px 2px 4px black;
+  position: relative;
+}
+
+.w_150{
+  min-width: 150px;
+}
+
+/*---   addtional  ---*/
+.addtional{
+
+}
+
+
+/*---   navbar   ---*/
+/*---   navbar   ---*/
+/*---   navbar   ---*/
 /*---   navbar   ---*/
 /*---   navbar   ---*/
 
@@ -224,4 +349,38 @@ margin-left: 15PX;
     margin-top: 300px;
 
   }
+  nav ul li{
+    width: 100%;
+  }
+  nav ul li{
+    width: 100%;
+  }
+
+  nav ul li:hover{
+
+  }
+  nav ul li a{
+    display: block;
+    padding-top: 14px;
+    height: 60px;
+  }
+  nav ul li a:hover{
+    background-color: #00ABBC;
+    transition: ease 1s;
+  }
+
+
+}
+
+@media screen and (max-width:575px) {
+
+.mx_auto{
+   float: none;
+   display: flex;
+   justify-content: center;
+}
+.w_150{
+  width: 200px;
+}
+
 }
